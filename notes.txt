@@ -1,0 +1,40 @@
+Jude Christian Agagad, Full Stack Developer
+Summary:
+Accomplished Full Stack Developer with a proven track record of optimizing critical applications for reliability and performance. 
+Skilled in scalable database design, efficient backend development, AI integration, and enhancing user experiences with practical 
+AI features. Experienced in cross-functional collaboration, aligning strategies with client requirements, and delivering high-quality results.
+
+Experience:
+
+Teleserve Asia, Legazpi City – Software Developer (Jul 2022 – Present)
+- Maintained and optimized critical company applications for reliability and performance.
+- Designed solid and scalable databases for better data management.
+- Built efficient backend services to enhance application performance.
+- Integrated machine learning by designing, training, and deploying models with validated datasets.
+- Collaborated cross-functionally to align development strategies with client requirements.
+- Developed AI features to improve user experiences.
+
+TMJP BPOServices Inc., Taguig City – Vulnerability Assessment and Penetration Testing (Dec 2021 – Apr 2022)
+- Conducted pentesting of infrastructure and applications, creating test scenarios and assessing vulnerabilities.
+- Delivered well-documented reports with solutions and recommendations for discovered vulnerabilities and exploits.
+
+TMJP BPOServices Inc., Taguig City – Full Stack Developer (Aug 2020 – Jan 2021)
+- Applied automated tests to increase software reliability.
+- Developed and maintained custom software solutions according to client requirements.
+- Improved code quality and team performance via thorough code reviews.
+- Collaborated closely with cross-functional teams to ensure smooth deployment.
+- Integrated AWS services to enhance operational efficiency, scalability, and performance.
+
+Boomsourcing, Legazpi City – Front End Developer (May 2019 – Mar 2020)
+- Created and maintained a design system for consistent UI/UX across projects.
+- Contributed to client-side development including server-side scripting.
+- Developed multiple front-end projects using various frameworks and design tools.
+
+Education:
+- Boom.Camp, Legazpi City – Full-stack Web Development Program (May 2019 – Sep 2019)
+  Topics: UI/UX Design Principles and Practices, AI Integration, API Development, RESTful Services
+- Forbes College, Legazpi City – Bachelor of Science in Information Technology (Jun 2015 – Apr 2019)
+
+Skills:
+PHP, Python, JavaScript, Node.js, React/Redux, HTML, CSS, AWS Technologies
+
