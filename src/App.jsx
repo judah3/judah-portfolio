@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import sitting from '../img/hero.svg';
-import resumePdf from '../media/FULLSTACK_RESUME_AGAGAD_JUDE.pdf';
 import { siteConfig } from './config/siteConfig';
 import {
   contactDetails,
@@ -119,7 +118,7 @@ export default function App() {
               <a className="btn" href="#contact">
                 Hire me
               </a>
-              <a className="btn ghost" href={resumePdf} download="FULLSTACK_RESUME_AGAGAD_JUDE.pdf">
+              <a className="btn ghost" href="/FULLSTACK_RESUME_AGAGAD_JUDE.pdf" download="FULLSTACK_RESUME_AGAGAD_JUDE.pdf">
                 Download CV
                 <span aria-hidden="true"></span>
               </a>
@@ -150,14 +149,21 @@ export default function App() {
                 <p className="project-meta">{project.meta}</p>
                 <h3>{project.title}</h3>
                 <p>{project.copy}</p>
-                <a
-                  className="btn-link"
-                  href={project.href}
-                  target={project.href.startsWith('http') ? '_blank' : undefined}
-                  rel={project.href.startsWith('http') ? 'noreferrer' : undefined}
-                >
-                  {project.cta}
-                </a>
+                <div className="project-actions">
+                  {[{ cta: project.cta, href: project.href }, { cta: project.secondaryCta, href: project.secondaryHref }]
+                    .filter((action) => action.cta && action.href)
+                    .map((action) => (
+                      <a
+                        key={`${project.title}-${action.cta}`}
+                        className="btn-link"
+                        href={action.href}
+                        target={action.href.startsWith('http') ? '_blank' : undefined}
+                        rel={action.href.startsWith('http') ? 'noreferrer' : undefined}
+                      >
+                        {action.cta}
+                      </a>
+                    ))}
+                </div>
               </article>
             ))}
           </div>
@@ -306,3 +312,4 @@ export default function App() {
     </div>
   );
 }
+

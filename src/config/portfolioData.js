@@ -86,6 +86,16 @@ export const skills = [
 
 export const projects = [
   {
+    title: 'Lokal LiveTranslate',
+    meta: 'Open source - 2026',
+    copy:
+      'Desktop app for local, real-time transcription and translation on Windows. It captures system audio (WASAPI loopback), streams it to a local Python engine, and displays live transcript + translation in an Electron UI.',
+    cta: 'View repo',
+    href: 'https://github.com/judah3/lokal-live-translate',
+    secondaryCta: 'Demo',
+    secondaryHref: '/download'
+  },
+  {
     title: 'HelpSpeech Live',
     meta: 'Open source - 2026',
     copy:
@@ -140,3 +150,4 @@ export const contactDetails = [
   { label: 'GitHub', value: 'judah3', href: 'https://github.com/judah3', icon: 'github' },
   { label: 'Address', value: 'Metro Manila', icon: 'location' }
 ];
+

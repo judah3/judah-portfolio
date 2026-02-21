@@ -334,9 +334,14 @@ main section {
   margin: 0;
 }
 
+.project-actions {
+  margin-top: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
 .btn-link {
   align-self: flex-start;
-  margin-top: 0.45rem;
   display: inline;
   padding: 0;
   border: none;
@@ -632,3 +637,4 @@ footer {
     text-align: center;
   }
 }
+
