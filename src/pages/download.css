@@ -184,6 +184,10 @@
   border-color: var(--color-border-strong);
 }
 
+.download-video-card:hover {
+  transform: none;
+}
+
 .download-video-card {
   margin-top: 1.4rem;
   padding: 1rem;

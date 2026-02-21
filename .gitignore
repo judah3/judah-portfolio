@@ -23,5 +23,7 @@ pnpm-debug.log*
 Thumbs.db
 .vscode/
 .idea/
-media/
+/media/
+!public/media/
+!public/media/**
 public/installer/*.exe
