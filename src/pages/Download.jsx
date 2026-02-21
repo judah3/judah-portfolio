@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import './download.css';
 
-const INSTALLER_FILE_NAME = 'LoKal-LiveTranslate-Setup-1.0.0.exe';
 const INSTALLER_VERSION = '1.0.0';
-const INSTALLER_URL = `/installer/${INSTALLER_FILE_NAME}`;
+const INSTALLER_URL = 'https://github.com/judah3/lokal-live-translate/releases/tag/v1.0.0';
 const INSTALLER_LABEL = `Windows Installer v${INSTALLER_VERSION}`;
 const REPO_URL = 'https://github.com/judah3/lokal-live-translate';
 
@@ -76,7 +75,7 @@ export default function Download() {
               GitHub
             </a>
           </nav>
-          <a className="download-btn download-btn-secondary download-header-cta" href={INSTALLER_URL} download={INSTALLER_FILE_NAME}>
+          <a className="download-btn download-btn-secondary download-header-cta" href={INSTALLER_URL} target="_blank" rel="noreferrer">
             {INSTALLER_LABEL}
           </a>
         </div>
@@ -94,7 +93,7 @@ export default function Download() {
               Open-source Windows software for real-time speech-to-text and translation with fully local processing.
             </p>
             <div className="download-actions">
-              <a className="download-btn download-btn-primary" href={INSTALLER_URL} download={INSTALLER_FILE_NAME}>
+              <a className="download-btn download-btn-primary" href={INSTALLER_URL} target="_blank" rel="noreferrer">
                 Download for Windows (v{INSTALLER_VERSION})
               </a>
               <a className="download-btn download-btn-secondary" href={REPO_URL} target="_blank" rel="noreferrer">
