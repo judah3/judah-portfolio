@@ -37,6 +37,7 @@ function ContactIcon({ type }) {
 
 export default function App() {
   const [navLifted, setNavLifted] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const mailtoLink = `mailto:${siteConfig.email}`;
   const contactEndpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT;
   const [formStatus, setFormStatus] = useState('');
@@ -93,21 +94,55 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsMobileNavOpen(false);
+      }
+    };
+
+    document.body.style.overflow = isMobileNavOpen ? 'hidden' : '';
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [isMobileNavOpen]);
+
   return (
     <div className="page-shell">
       <nav className={`nav ${navLifted ? 'nav-scrolled' : ''}`}>
         <div className="brand">{siteConfig.brand}</div>
-        <div className="nav-links">
+        <button
+          type="button"
+          className="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMobileNavOpen}
+          aria-controls="site-navigation"
+          onClick={() => setIsMobileNavOpen((prev) => !prev)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <div id="site-navigation" className={`nav-links ${isMobileNavOpen ? 'is-open' : ''}`}>
           {navLinks.map((link) => (
-            <a key={link.label} href={link.href}>
+            <a key={link.label} href={link.href} onClick={() => setIsMobileNavOpen(false)}>
               {link.label}
             </a>
           ))}
+          <a className="btn ghost nav-contact" href="#contact" onClick={() => setIsMobileNavOpen(false)}>
+            Contact me
+          </a>
         </div>
-        <a className="btn ghost" href="#contact">
-          Contact me
-        </a>
       </nav>
+      <button
+        type="button"
+        className={`nav-overlay ${isMobileNavOpen ? 'is-open' : ''}`}
+        aria-label="Close navigation menu"
+        onClick={() => setIsMobileNavOpen(false)}
+      />
       <header className="hero" id="home">
         <div className="hero-grid">
           <div className="hero-content">
@@ -129,10 +164,10 @@ export default function App() {
             <div className="illustration-card">
               <img src={sitting} alt="Developer working on a laptop" className="hero-pic" />
             </div>
-            <div className="down-indicator">
+            {/* <div className="down-indicator">
               <span>Scroll</span>
               <div className="bar" />
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
@@ -312,4 +347,3 @@ export default function App() {
     </div>
   );
 }
-

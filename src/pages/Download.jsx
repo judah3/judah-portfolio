@@ -111,7 +111,7 @@ export default function Download() {
           </header>
           <div className="download-card download-video-card">
             <video controls preload="metadata" className="download-video" aria-label="Lokal Live Translate demo video">
-              <source src="/media/demo.mp4" type="video/mp4" />
+              <source src="/media/demo3.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
