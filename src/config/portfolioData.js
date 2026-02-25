@@ -86,6 +86,22 @@ export const skills = [
 
 export const projects = [
   {
+    title: 'Mister Q&A',
+    meta: 'Open source - 2026',
+    copy:
+      'Desktop app for local, real-time transcription on Windows. The app captures system output audio (WASAPI loopback), streams it to a local Python transcription engine, and renders live transcript updates in an Electron UI.',
+    cta: 'View repo',
+    href: 'https://github.com/judah3/mister-q-a'
+  },
+  {
+    title: 'LoKal LiveTranscript',
+    meta: 'Open source - 2026',
+    copy:
+      'Boilerplate for capturing local live transcription, intended as a base project for real-time speech transcription workflows.',
+    cta: 'View repo',
+    href: 'https://github.com/judah3/LoKal-liveTranscript'
+  },
+  {
     title: 'Lokal LiveTranslate',
     meta: 'Open source - 2026',
     copy:
@@ -150,4 +166,3 @@ export const contactDetails = [
   { label: 'GitHub', value: 'judah3', href: 'https://github.com/judah3', icon: 'github' },
   { label: 'Address', value: 'Metro Manila', icon: 'location' }
 ];
-
