@@ -66,4 +66,4 @@ VITE_CONTACT_FORM_ENDPOINT=https://formspree.io/f/mreaavkr
 - `src/config/siteConfig.js` - environment-driven site identity config
 - `src/config/colorScheme.js` - color tokens and theme setup
 - `src/config/portfolioData.js` - projects, skills, experience, education, contact data
-- `media/FULLSTACK_RESUME_AGAGAD_JUDE.pdf` - downloadable CV
+- `public/2026 Jude Agagad Resume.pdf` - downloadable CV

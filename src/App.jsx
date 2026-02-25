@@ -118,7 +118,7 @@ export default function App() {
               <a className="btn" href="#contact">
                 Hire me
               </a>
-              <a className="btn ghost" href="/FULLSTACK_RESUME_AGAGAD_JUDE.pdf" download="FULLSTACK_RESUME_AGAGAD_JUDE.pdf">
+              <a className="btn ghost" href="/2026 Jude Agagad Resume.pdf" download="2026 Jude Agagad Resume.pdf">
                 Download CV
                 <span aria-hidden="true"></span>
               </a>
